@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Droid;
+    src: url(fontes/idroid.otf);
+}
+@media only screen and (max-width: 900px) {
+    .grande{display: none;}
+}
+@media only screen and (min-width: 900px) {
+    .pequeno{display: none;}
+}
+@media screen and (max-width: 480px){
+    nav ul {
+        display: none;
+    }
+    nav li {
+        display: none;
+        margin: 0;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+}
+    
+
+
+body {
+    background-color: #84E1AD;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0.1px 0.4px rgba(41, 40, 40, 0.774);
+}
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #13a053, #06140d);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: rgb(250, 250, 250);
+    text-shadow: 2px 1px 2px black;
+    margin: -8px;
+    margin-top: -22px;
+    height: 180px;
+    display: flexbox;
+    position: relative;
+    
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+}
+.menu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu > li {
+    display: inline-flex;
+    margin: 0 10px
+}
+a {
+    display: flex;
+    padding: 3px 3px;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+a:hover {
+    background-color: #525252;
+    color: #f1f1f1;
+    border-radius: 4%;
+    
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    border-radius: 0.3%;
+}
+main > p {
+    text-align: justify;
+    margin: 3px;
+    border-radius: 0.5%;
+    text-indent: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h2 , h3 {
+    font-family: Droid;
+    text-align: left;
+    color: rgb(13, 90, 13);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.479);
+    margin-left: 5px;
+    padding-left: 10px;
+}
+h3{
+    background-image: linear-gradient(to right, rgba(12, 160, 12, 0.568), white); 
+}
+.aside {
+    background-color: #84E1AD;
+    height: 26%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 10px;
+    display: flexbox;
+    flex-wrap: wrap;
+    overflow: auto;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.61);
+}
+.aside > h4 {
+    background-color: #13a053;
+    font-size: 1.1em;
+    color: rgb(248, 241, 241);
+    text-shadow: 1px 1px 1px black;
+    height: 30px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0em;
+}
+#lista {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    list-style-type: none;
+    padding-right: 14px;
+}
+#lista >ul {
+    list-style: none;
+    padding: 0;
+}
+#lista > li {
+    padding: 8px;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+}
+#lista > li:before {
+    content: url(imagens/logotipo-android.png);
+}
+footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 27, 27);
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+}
+.final {
+    text-align: center;
+}
